@@ -8,12 +8,34 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 1" rotation="0 0 45" scale="0.5 0.5 0.5" color="#6173D4" width="2" height="2" depth="2" src="leisa_christmas_false_color.png">
-        <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
-      </a-box>
-      <a-entity position="0 0 3.8">
-        <a-camera></a-camera>
-      </a-entity>
+  <a-entity positon="1 0 0" scale="0.3 0.3 0.3" geometry="primitive: sphere; radius: 1.5">
+  <a-animation attribute="position"
+               dur="2000"
+               to="4 0 0"
+               ></a-animation>
+</a-entity>
+<a-entity  position="4 0 0" scale="0.3 0.3 0.3" geometry="primitive: sphere; radius: 1.5">
+<a-animation attribute="position"
+             dur="2000"
+             begin="2000"
+             to="7 0 0"></a-animation>
+</a-entity>
+<a-entity positon="7 0 0" scale="0.3 0.3 0.3" geometry="primitive: sphere; radius: 1.5">
+<a-animation attribute="position"
+             dur="2000"
+             begin="4000"
+             to="10 0 0"
+             ></a-animation>
+</a-entity>
+<a-entity  position="10 0 0" scale="0.3 0.3 0.3" geometry="primitive: sphere; radius: 1.5">
+<a-animation attribute="position"
+           dur="2000"
+           begin="6000"
+           to="13 0 0"></a-animation>
+</a-entity>
+<a-entity position="5 -1.5 3 ">
+  <a-camera></a-camera>
+</a-entity>
     </a-scene>
   </body>
 </html>

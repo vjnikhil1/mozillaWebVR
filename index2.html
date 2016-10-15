@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! • A-Frame</title>
+    <meta name="description" content="Hello, World! • A-Frame">
+    <script src="aframe-v0.3.2.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="-1 0.5 1" rotation="0 0 45" scale="0.5 0.5 0.5" color="#6173D4" width="2" height="2" depth="2" src="leisa_christmas_false_color.png">
+        <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+      </a-box>
+      <a-entity position="0 0 3.8">
+        <a-camera></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
